@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `PWA Template`,
+    title: `Financial Extrapolator`,
     description: `The Progressive Web App starter pack, go make awesome stuff with it.`,
     author: `@gatsbyjs`,
   },
