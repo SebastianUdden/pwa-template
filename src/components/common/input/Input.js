@@ -108,7 +108,7 @@ const InputEl = styled.input`
   border: none;
   padding: 0.5rem;
   outline: none;
-  color: #333;
+  color: #fff;
   font-size: 1.15rem;
   font-weight: 800;
   caret-color: #aaa;
