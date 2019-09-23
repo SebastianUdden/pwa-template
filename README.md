@@ -54,6 +54,9 @@
     1. Keep default settings and click `Deploy site`, netlify will spit out a randomly generated website name.
     1. When the build is complete you can simply go to the website name and see the project live, any new commits will cause a build from netlify and after a while the page will be updated.
 
+<br>
+<hr>
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
