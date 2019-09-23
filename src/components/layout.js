@@ -11,7 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import { WIDTH } from "./finance-extrapolator/constants"
+import { MAX_WIDTH } from "../constants/sizes"
+import { BASE_TEXT_COLOR } from "../constants/theme"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,9 +31,10 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: WIDTH,
+          maxWidth: MAX_WIDTH,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
+          color: BASE_TEXT_COLOR,
         }}
       >
         <main>{children}</main>

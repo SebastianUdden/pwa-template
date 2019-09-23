@@ -1,32 +1,40 @@
+import React from "react"
+import styled from "styled-components"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
-import { WIDTH } from "./finance-extrapolator/constants"
+import { MAX_WIDTH } from "../constants/sizes"
+import {
+  HEADER_COLOR,
+  BASE_TEXT_COLOR,
+  BASE_HOVER_COLOR,
+} from "../constants/theme"
+
+const MainLink = styled(Link)`
+  color: ${BASE_TEXT_COLOR};
+  text-decoration: none;
+  :hover {
+    color: ${BASE_HOVER_COLOR};
+  }
+`
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#222`,
+      background: HEADER_COLOR,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: WIDTH,
+        maxWidth: MAX_WIDTH,
         padding: `1.45rem 1.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+        <MainLink to="/" style={{}}>
           {siteTitle}
-        </Link>
+        </MainLink>
       </h1>
     </div>
   </header>

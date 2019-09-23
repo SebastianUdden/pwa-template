@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import { SVG } from "../components/svg/svg"
 import { rocket } from "../svgs/rocket.js"
 import { rocketColored } from "../svgs/rocketColored.js"
+import { BASE_TEXT_COLOR } from "../constants/theme"
 
 const P = styled.p``
 
@@ -20,7 +21,7 @@ const IndexPage = () => (
     <h1>Hey buddy!</h1>
     <P>
       This will be the base of many awesome apps, enjoy your{" "}
-      <SVG {...rocket} size={18} color="#fff" /> below...
+      <SVG {...rocket} size={18} color={BASE_TEXT_COLOR} /> below...
     </P>
     <SVGWrapper>
       <SVG {...rocketColored} size={240} />
