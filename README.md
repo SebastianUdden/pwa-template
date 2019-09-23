@@ -40,7 +40,7 @@
     git init
     git add -A
     git commit -m "Initial commit"
-    git remote add origin https://github.com/SebastianUdden/project-name.git
+    git remote add origin https://github.com/user-name/project-name.git
     git push -u origin master
     ```
 
