@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `PWA Template`,
     description: `The Progressive Web App starter pack, go make awesome stuff with it.`,
-    author: `@gatsbyjs`,
+    author: `@SebastianUdden`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
